@@ -1,0 +1,31 @@
+# History files
+.Rhistory
+.Rapp.history
+
+# Session Data
+.RData
+
+# User-specific files
+.Ruserdata
+
+# Example code in package directories
+*-Ex.R
+
+# RStudio files
+.rstudio-desktop/
+
+# knitr and R markdown temporary files
+*_cache/
+/cache/
+*.utf8.md
+*.knit.md
+
+# LaTeX intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.sagetex.sage
+*.sagetex.scmd
+*.sagetex.slog
