@@ -7,29 +7,33 @@ This repository provides a powerful and flexible template for creating academic 
 - Based on R Markdown for easy content creation.
 - Utilizes LaTeX for high-quality typesetting and formatting.
 - Includes a pre-configured bibliography setup with BibTeX.
-- Designed for an automated workflow where an LLM populates the template from a simple text file.
+- Automated processing via the `process_inputs.py` script which calls the Gemini CLI.
 
-## Workflow
+## Automated Workflow
 
-The intended workflow for this template is to be used with an AI assistant. For detailed instructions on this process, please refer to the `GEMINI.md` file.
+1.  **Add Notes**: Place your raw note files (.txt, .md, etc.) into the `input-RawFiles` directory.
+2.  **Run the Script**: Execute the automation script from your terminal:
+    ```bash
+    python process_inputs.py
+    ```
+3.  **Review Changes**: The script will invoke the Gemini CLI to process your notes, update the bibliography (`Bibliografia.bib`), and populate the R Markdown template (`TemplateDocco-0.Rmd`).
+4.  **Compile**: Once the script is finished, you can compile the final PDF using RStudio or by running the following command in an R environment:
+    ```R
+    rmarkdown::render("TemplateDocco-0.Rmd")
+    ```
 
-The basic steps are:
-
-1.  **Create an `input.txt` file**: This file will contain your personal information, paper metadata, core content/notes, and references. A recommended structure is provided in `GEMINI.md`.
-2.  **Instruct your LLM assistant**: Ask the LLM to process your `input.txt` file. The LLM will then:
-    - Update the bibliography (`Bibliografia.bib`).
-    - Populate the metadata and content of the main R Markdown file (`TemplateDocco-0.Rmd`).
-    - Structure and enhance your notes into a coherent academic paper.
-3.  **Compile the PDF**: The LLM will compile the document to produce the final PDF.
+For more detailed information on the automation, see the `GEMINI.md` file.
 
 ## Getting Started
 
-To use this template manually or to compile the final document, you will need the following installed:
+To use this template, you will need the following installed:
 
+- Python 3
+- The Gemini CLI (and have it accessible in your system's PATH)
 - R and RStudio
 - A LaTeX distribution (e.g., MiKTeX, TeX Live)
 - The R package `rmarkdown`
 
 ## License
 
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+This project is licensed under the MIT License.
