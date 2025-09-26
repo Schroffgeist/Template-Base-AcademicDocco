@@ -1,7 +1,4 @@
 ---
-# title: "TemplateDocco-0"
-# author: "Alejandro Vladimir Gómez Sánchez"
-# date: "`r Sys.Date()`"
 documentclass: "extarticle"
 lang: "es-MX"
 hyphenate: true
