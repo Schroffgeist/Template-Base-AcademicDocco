@@ -15,7 +15,7 @@ if not os.path.isdir(INPUT_DIR):
 
 # --- 2. Find files to process ---
 try:
-    file_paths = [os.path.join(os.path.abspath(INPUT_DIR), f) for f in os.listdir(INPUT_DIR) if os.path.isfile(os.path.join(INPUT_DIR, f))]
+    file_paths = [os.path.join(f"@'{os.path.abspath(INPUT_DIR)}", f"{f}'") for f in os.listdir(INPUT_DIR) if os.path.isfile(os.path.join(INPUT_DIR, f))]
 except OSError as e:
     print(f"Error reading directory {INPUT_DIR}: {e}")
     sys.exit(1)

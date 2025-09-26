@@ -1,4 +1,4 @@
-You are an expert in academic writing and document automation. Your task is to process the list of files provided below to generate a complete academic paper.
+You are an expert in academic writing and rigorous document writing. Your task is to process the list of files provided below to generate a complete academic paper.
 
 **Instructions:**
 1.  Read and analyze the content of all the files listed.
