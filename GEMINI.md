@@ -10,8 +10,8 @@ The primary goal is to automate the creation of a well-structured academic paper
 - **`process_inputs.py`**: The main Python script that automates the entire workflow.
 - **`prompt.txt`**: A template file containing the detailed instructions for the headless Gemini instance.
 - **`input-RawFiles/`**: A directory where the user places all their raw notes, data, and reference files.
-- **`TemplateDocco-0.Rmd`**: The main R Markdown template file that will be modified.
-- **`sage-plots-for-TemplateDocco-0.tex/Bibliografia.bib`**: The bibliography file that will be updated.
+- **`docs/template.Rmd`**: The main R Markdown template file that will be modified.
+- **`docs/assets/Bibliografia.bib`**: The bibliography file that will be updated.
 
 ## 3. Automated Workflow
 
@@ -26,8 +26,8 @@ This project uses an automated script, `process_inputs.py`, to manage the paper 
 When executed by the script, the headless Gemini instance will perform the following based on the instructions in `prompt.txt`:
 
 1.  **Parse All Inputs**: Read and analyze the content from all the file paths provided in the prompt.
-2.  **Extract & Update Bibliography**: Identify references and append them as correctly formatted BibTeX entries to `sage-plots-for-TemplateDocco-0.tex/Bibliografia.bib`.
-3.  **Extract & Update Rmd**: Identify personal info, document metadata, and the core content. Use this to replace the placeholder values in the YAML header and body of `TemplateDocco-0.Rmd`.
+2.  **Extract & Update Bibliography**: Identify references and append them as correctly formatted BibTeX entries to `docs/assets/Bibliografia.bib`.
+3.  **Extract & Update Rmd**: Identify personal info, document metadata, and the core content. Use this to replace the placeholder values in the YAML header and body of `docs/template.Rmd`.
 4.  **Structure and Enhance Content**: This is the most critical step. The LLM will:
     -   Organize the raw notes into a standard academic structure (Introduction, Main Body, Conclusion, etc.).
     -   Write missing sections (like the introduction or conclusion) if they are not present in the notes.
@@ -39,6 +39,6 @@ When executed by the script, the headless Gemini instance will perform the follo
 After the script and the headless Gemini instance have finished, the user must manually compile the final PDF using their R environment:
 
 ```R
-rmarkdown::render("TemplateDocco-0.Rmd")
+rmarkdown::render("docs/template.Rmd")
 ```
 ```
