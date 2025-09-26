@@ -12,7 +12,7 @@ geometry:
   - inner=5mm
   - outer=5mm
 citation_package: "biblatex"  # Paquete para manejar la bibliografía (alternativa a natbib)
-bibliography: "assets/Bibliografia.bib" # Ruta al archivo .bib
+bibliography: "sage-plots-for-template.tex/Bibliografia.bib" # Ruta al archivo .bib
 biblio-style: "apalike"       # Estilo de la bibliografía
 nocite: '@*'                  # Citar todas las entradas del archivo .bib sin mencionarlas explícitamente en el texto
 link-citations: true          # Crear hipervínculos para las citas

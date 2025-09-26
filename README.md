@@ -11,7 +11,7 @@ This repository provides a powerful and flexible template for creating academic 
 
 -   `docs/`: Contains the core template and automation files.
     -   `template.Rmd`: The main R Markdown template file.
-    -   `assets/`: Contains all the assets for the document, such as bibliography files, plots, and logos.
+    -   `sage-plots-for-template.tex/`: Contains all the assets for the document, such as bibliography files, plots, and logos.
     -   `process_inputs.py`: The Python script that automates the workflow.
     -   `prompt.txt`: The prompt for the Gemini CLI.
     -   `input-RawFiles/`: Place your raw note files (.txt, .md, etc.) in this directory.
@@ -23,7 +23,7 @@ This repository provides a powerful and flexible template for creating academic 
     ```bash
     python docs/process_inputs.py
     ```
-3.  **Review Changes**: The script will invoke the Gemini CLI to process your notes, update the bibliography (`docs/assets/Bibliografia.bib`), and populate the R Markdown template (`docs/template.Rmd`).
+3.  **Review Changes**: The script will invoke the Gemini CLI to process your notes, update the bibliography (`docs/sage-plots-for-template.tex/Bibliografia.bib`), and populate the R Markdown template (`docs/template.Rmd`).
 4.  **Compile**: Once the script is finished, you can compile the final PDF using RStudio or by running the following command in an R environment:
     ```R
     rmarkdown::render("docs/template.Rmd")

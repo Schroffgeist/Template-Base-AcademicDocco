@@ -32,3 +32,6 @@
 
 # User-provided raw files
 docs/input-RawFiles/
+
+# Generated PDF
+docs/template.pdf

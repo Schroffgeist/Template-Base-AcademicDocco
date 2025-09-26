@@ -11,7 +11,7 @@ The primary goal is to automate the creation of a well-structured academic paper
 - **`docs/prompt.txt`**: A template file containing the detailed instructions for the headless Gemini instance.
 - **`docs/input-RawFiles/`**: A directory where the user places all their raw notes, data, and reference files.
 - **`docs/template.Rmd`**: The main R Markdown template file that will be modified.
-- **`docs/assets/Bibliografia.bib`**: The bibliography file that will be updated.
+- **`docs/sage-plots-for-template.tex/Bibliografia.bib`**: The bibliography file that will be updated.
 
 ## 3. Automated Workflow
 
@@ -26,7 +26,7 @@ This project uses an automated script, `process_inputs.py`, to manage the paper 
 When executed by the script, the headless Gemini instance will perform the following based on the instructions in `prompt.txt`:
 
 1.  **Parse All Inputs**: Read and analyze the content from all the file paths provided in the prompt.
-2.  **Extract & Update Bibliography**: Identify references and append them as correctly formatted BibTeX entries to `docs/assets/Bibliografia.bib`.
+2.  **Extract & Update Bibliography**: Identify references and append them as correctly formatted BibTeX entries to `docs/sage-plots-for-template.tex/Bibliografia.bib`.
 3.  **Extract & Update Rmd**: Identify personal info, document metadata, and the core content. Use this to replace the placeholder values in the YAML header and body of `docs/template.Rmd`.
 4.  **Structure and Enhance Content**: This is the most critical step. The LLM will:
     -   Organize the raw notes into a standard academic structure (Introduction, Main Body, Conclusion, etc.).
