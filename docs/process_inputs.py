@@ -3,7 +3,7 @@ import subprocess
 import sys
 
 # --- Configuration ---
-INPUT_DIR = "input-RawFiles"
+INPUT_DIR = "../input-RawFiles"
 PROMPT_FILE = "prompt.txt"
 GEMINI_MODEL = "gemini-2.5-pro" 
 

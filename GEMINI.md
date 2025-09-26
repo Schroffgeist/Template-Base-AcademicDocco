@@ -7,8 +7,8 @@ The primary goal is to automate the creation of a well-structured academic paper
 ## 2. Project File Structure
 
 - **`GEMINI.md`**: This file. Contains the high-level instructions for the LLM.
-- **`process_inputs.py`**: The main Python script that automates the entire workflow.
-- **`prompt.txt`**: A template file containing the detailed instructions for the headless Gemini instance.
+- **`docs/process_inputs.py`**: The main Python script that automates the entire workflow.
+- **`docs/prompt.txt`**: A template file containing the detailed instructions for the headless Gemini instance.
 - **`input-RawFiles/`**: A directory where the user places all their raw notes, data, and reference files.
 - **`docs/template.Rmd`**: The main R Markdown template file that will be modified.
 - **`docs/assets/Bibliografia.bib`**: The bibliography file that will be updated.
