@@ -9,7 +9,7 @@ The primary goal is to automate the creation of a well-structured academic paper
 - **`GEMINI.md`**: This file. Contains the high-level instructions for the LLM.
 - **`docs/process_inputs.py`**: The main Python script that automates the entire workflow.
 - **`docs/prompt.txt`**: A template file containing the detailed instructions for the headless Gemini instance.
-- **`input-RawFiles/`**: A directory where the user places all their raw notes, data, and reference files.
+- **`docs/input-RawFiles/`**: A directory where the user places all their raw notes, data, and reference files.
 - **`docs/template.Rmd`**: The main R Markdown template file that will be modified.
 - **`docs/assets/Bibliografia.bib`**: The bibliography file that will be updated.
 
@@ -17,7 +17,7 @@ The primary goal is to automate the creation of a well-structured academic paper
 
 This project uses an automated script, `process_inputs.py`, to manage the paper generation process. The script performs the following actions:
 
-1.  **Scans for Inputs**: It searches the `input-RawFiles` directory for all user-provided files.
+1.  **Scans for Inputs**: It searches the `docs/input-RawFiles` directory for all user-provided files.
 2.  **Constructs Prompt**: It reads the instructions from `prompt.txt` and appends the list of found file paths to it.
 3.  **Executes Gemini CLI**: It calls the Gemini CLI in headless mode (`gemini -p -y ...`), feeding it the constructed prompt. This instructs Gemini to perform the core content generation and file editing tasks.
 

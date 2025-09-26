@@ -14,11 +14,11 @@ This repository provides a powerful and flexible template for creating academic 
     -   `assets/`: Contains all the assets for the document, such as bibliography files, plots, and logos.
     -   `process_inputs.py`: The Python script that automates the workflow.
     -   `prompt.txt`: The prompt for the Gemini CLI.
--   `input-RawFiles/`: Place your raw note files (.txt, .md, etc.) in this directory.
+    -   `input-RawFiles/`: Place your raw note files (.txt, .md, etc.) in this directory.
 
 ## Automated Workflow
 
-1.  **Add Notes**: Place your raw note files (.txt, .md, etc.) into the `input-RawFiles` directory.
+1.  **Add Notes**: Place your raw note files (.txt, .md, etc.) into the `docs/input-RawFiles` directory.
 2.  **Run the Script**: Execute the automation script from your terminal:
     ```bash
     python docs/process_inputs.py

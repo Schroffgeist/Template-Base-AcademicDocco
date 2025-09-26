@@ -29,3 +29,6 @@
 *.sagetex.sage
 *.sagetex.scmd
 *.sagetex.slog
+
+# User-provided raw files
+docs/input-RawFiles/
