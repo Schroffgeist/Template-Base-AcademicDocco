@@ -7,6 +7,11 @@ This repository provides a powerful and flexible template for creating academic 
 1.  Click the "**Use this template**" button on the GitHub repository page to create a new repository based on this template.
 2.  Clone your newly created repository to your local machine.
 
+Alternatively, you can use the GitHub CLI:
+```sh
+gh repo create ArtificialWork --public --template Schroffgeist/Template-Base-AcademicDocco --clone
+```
+
 ## Directory Structure
 
 -   `docs/`: Contains the core template and automation files.
