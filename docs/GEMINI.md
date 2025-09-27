@@ -32,7 +32,7 @@ When executed by the script, the headless Gemini instance will perform the follo
 1.  **Parse All Inputs**: Read and analyze the content from all the file paths provided in the prompt.
 2.  **Extract & Update Bibliography**: Identify references and append them as correctly formatted BibTeX entries to `sage-plots-for-template.tex/Bibliografia.bib`.
 3.  **Extract & Update Rmd**: Identify personal info, document metadata, and the core content. Use this to replace the placeholder values in the YAML header and body of `template.Rmd`.
-4.  Extract & update Headers**: Identifay information that need parametrization and complement changes from `template.Rmd` to match in `Headers.tex`.
+4.  **Extract & update Headers**: Identifay information that need parametrization and complement changes from `template.Rmd` to match in `Headers.tex`.
 5.  **Structure and Enhance Content**: This is the most critical step. The LLM will:
     -   Organize the raw notes into a standard academic structure (Introduction, Main Body, Conclusion, etc.).
     -   Write missing sections (like the introduction or conclusion) if they are not present in the notes.
