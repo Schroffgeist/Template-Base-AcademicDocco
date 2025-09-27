@@ -33,8 +33,6 @@ output:
 format:
   pdf:
     number_sections: true
-    include_in_header: "Headers.tex"
-    include_before_body: "BeforeBody.tex"
     latex_extra_dependencies: ["color", "booktabs", "longtable", "adjustbox", "xparse"]
     fig_caption: true
     mainfont: Cousine

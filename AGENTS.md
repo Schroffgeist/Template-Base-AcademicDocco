@@ -1,8 +1,8 @@
-# Gemini Agent for Academic Paper Generation
+# Agent for Academic Paper Generation
 
 This project utilizes a headless Gemini instance to automate the generation of academic papers from raw notes and templates.
 
-## Role of the Gemini Agent
+## Role of the Agent
 
 The Gemini agent, when invoked by the `process_inputs.py` script, performs the following key tasks:
 
