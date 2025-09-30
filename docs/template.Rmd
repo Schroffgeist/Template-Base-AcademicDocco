@@ -61,7 +61,7 @@ params:
   # Title page metadata
   assignment_title: "Título de la Asignación."
   activity_type: "Tipo de actividad."
-  period: "1i-2025."
+  period: "Periodo lectivo."
   subject_name: "Nombre de la Asignatura."
   group_id: "id-Grupo."
   classroom: "Salón asignado."
@@ -69,10 +69,10 @@ params:
   assistant_name: "Nombre del ayudante."
   student_name: "Nombre del estudiante."
   student_id: "id-Alumno."
-  student_email1: "alev.gosa@gmail.com"
-  student_email2: "alejandro.vgs@comunidad.unam.mx"
+  student_email1: "correo1@provedor.com"
+  student_email2: "correo2@provedor.com"
   due_date: "día de la semana Número de Mes del Año. Hora límite."
-  gps_location: "CDMX"
+  gps_location: "Ciudad/País"
   # Header/Footer metadata
   subject_fancy: "Nombre de la Asignatura abreviado."
 encoding: UTF-8
